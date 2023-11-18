@@ -26,7 +26,8 @@ body {
 .container {
   max-width: 1100px;
   margin: auto;
-  height: 100%;
+  min-height: 100vh;
+  padding: 0 2rem;
 }
 
 #contact .row {
@@ -36,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  min-height: 100vh;
 }
 
 #contact .row .col-1 {
@@ -101,4 +103,31 @@ body {
   font-weight: 600;
   color: var(--red);
   text-decoration: none;
+}
+
+/* Responsive */
+/* Tablet */
+@media (max-width: 900px) {
+  #contact .row {
+    column-gap: 1rem;
+  }
+
+  #contact .row .col-1 h1 {
+    font-size: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .container {
+    padding: 2rem;
+  }
+
+  #contact {
+    text-align: center;
+  }
+
+  #contact .row {
+    grid-template-columns: 1fr;
+  }
 }
