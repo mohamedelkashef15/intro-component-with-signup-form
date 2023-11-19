@@ -20,13 +20,12 @@ body {
 
 #contact {
   background: url("./images/bg-intro-desktop.png") var(--red);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 1100px;
   margin: auto;
-  min-height: 100vh;
   padding: 0 2rem;
 }
 
@@ -36,7 +35,6 @@ body {
   column-gap: 3rem;
   justify-content: center;
   align-items: center;
-  height: 100%;
   min-height: 100vh;
 }
 
